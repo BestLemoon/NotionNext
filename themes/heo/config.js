@@ -15,7 +15,7 @@ const CONFIG = {
   HEO_HERO_TITLE_3: 'BLOG.CCCC.PW',
   HEO_HERO_TITLE_4: '新版上线',
   HEO_HERO_TITLE_5: '新博客上线，聊聊新感受～',
-  HEO_HERO_TITLE_LINK: 'https://blog.cccc.pw/article/1',
+  HEO_HERO_TITLE_LINK: 'https://blog.cccc.pw/article/91fbaa98-4200-4bf4-8e80-f3d1d8754324',
 
   // 英雄区显示三个置顶分类
   HEO_HERO_CATEGORY_1: { title: '技术分享', url: '/tag/技术分享' },
