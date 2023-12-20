@@ -14,6 +14,9 @@ import { isBrowser, loadExternalResource } from '@/lib/utils'
 // 各种扩展插件 这个要阻塞引入
 import ExternalPlugins from '@/components/ExternalPlugins'
 import { CUSTOM_EXTERNAL_CSS, CUSTOM_EXTERNAL_JS, IMG_SHADOW } from '@/blog.config'
+// import vercel components
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 
 const MyApp = ({ Component, pageProps }) => {
   // 自定义样式css和js引入
@@ -46,6 +49,8 @@ const MyApp = ({ Component, pageProps }) => {
   return (
         <GlobalContextProvider {...pageProps}>
             <Component {...pageProps} />
+            <Analytics />
+            <SpeedInsights />
             <ExternalPlugins {...pageProps} />
         </GlobalContextProvider>
   )
