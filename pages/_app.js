@@ -50,7 +50,6 @@ const MyApp = ({ Component, pageProps }) => {
         <GlobalContextProvider {...pageProps}>
             <Component {...pageProps} />
             <Analytics />
-            // <SpeedInsights />
             <ExternalPlugins {...pageProps} />
         </GlobalContextProvider>
   )
