@@ -15,7 +15,7 @@ import { isBrowser, loadExternalResource } from '@/lib/utils'
 import ExternalPlugins from '@/components/ExternalPlugins'
 import { CUSTOM_EXTERNAL_CSS, CUSTOM_EXTERNAL_JS, IMG_SHADOW } from '@/blog.config'
 // import vercel components
-//import { SpeedInsights } from '@vercel/speed-insights/next';
+// import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/react';
 
 const MyApp = ({ Component, pageProps }) => {
@@ -50,7 +50,7 @@ const MyApp = ({ Component, pageProps }) => {
         <GlobalContextProvider {...pageProps}>
             <Component {...pageProps} />
             <Analytics />
-            //<SpeedInsights />
+            // <SpeedInsights />
             <ExternalPlugins {...pageProps} />
         </GlobalContextProvider>
   )
