@@ -5,17 +5,17 @@ const CONFIG = {
 
   // 首页顶部通知条滚动内容，如不需要可以留空 []
   HEO_NOTICE_BAR: [
-    { title: '欢迎来到我的博客', url: 'https://blog.cccc.pw' },
-    { title: '想要多一些了解我～', url: 'https://blog.cccc.pw/about' }
+    { title: '欢迎来到我的博客', url: 'https://blog.chillway.me' },
+    { title: '想要多一些了解我～', url: 'https://blog.chillway.me/about' }
   ],
 
   // 英雄区(首页顶部大卡)
   HEO_HERO_TITLE_1: '记录生活',
   HEO_HERO_TITLE_2: '与思维认知',
-  HEO_HERO_TITLE_3: 'BLOG.CCCC.PW',
+  HEO_HERO_TITLE_3: 'BLOG.CHILLWAY.ME',
   HEO_HERO_TITLE_4: '新版上线',
   HEO_HERO_TITLE_5: '新博客上线，聊聊新感受～',
-  HEO_HERO_TITLE_LINK: 'https://blog.cccc.pw/article/91fbaa98-4200-4bf4-8e80-f3d1d8754324',
+  HEO_HERO_TITLE_LINK: 'https://blog.chillway.me/article/91fbaa98-4200-4bf4-8e80-f3d1d8754324',
 
   // 英雄区显示三个置顶分类
   HEO_HERO_CATEGORY_1: { title: '技术分享', url: '/tag/技术分享' },
