@@ -7,13 +7,6 @@ import { isBrowser } from '@/lib/utils'
 import { siteConfig } from '@/lib/config'
 import { NotionRenderer } from 'react-notion-x'
 
-// Notion渲染
-// const NotionRenderer = dynamic(() => import('react-notion-x').then(async (m) => {
-//   return m.NotionRenderer
-// }), {
-//   ssr: false
-// })
-
 const Code = dynamic(() =>
   import('react-notion-x/build/third-party/code').then(async (m) => {
     return m.Code
@@ -24,7 +17,7 @@ const Code = dynamic(() =>
 const Equation = dynamic(() =>
   import('@/components/Equation').then(async (m) => {
     // 化学方程式
-    await import('@/lib/mhchem')
+    await import('@/lib/plugins/mhchem')
     return m.Equation
   }), { ssr: false }
 )

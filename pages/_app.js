@@ -1,4 +1,4 @@
-import '@/styles/animate.css' // @see https://animate.style/
+// import '@/styles/animate.css' // @see https://animate.style/
 import '@/styles/globals.css'
 import '@/styles/nprogress.css'
 import '@/styles/utility-patterns.css'
@@ -19,6 +19,7 @@ import useAdjustStyle from '@/hooks/useAdjustStyle'
 import ExternalPlugins from '@/components/ExternalPlugins'
 import GlobalHead from '@/components/GlobalHead'
 import BLOG from '@/blog.config'
+
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Analytics } from '@vercel/analytics/react'
 
