@@ -2,11 +2,7 @@ import BLOG from '@/blog.config'
 import { siteConfig } from '@/lib/config'
 import { getGlobalData, getPost, getPostBlocks } from '@/lib/db/getSiteData'
 import { uploadDataToAlgolia } from '@/lib/plugins/algolia'
-import {
-  checkSlugHasNoSlash,
-  checkSlugHasOneSlash,
-  getRecommendPost
-} from '@/lib/utils/post'
+import { checkSlugHasOneSlash, getRecommendPost } from '@/lib/utils/post'
 import { idToUuid } from 'notion-utils'
 import Slug from '..'
 
@@ -42,13 +38,6 @@ export async function getStaticPaths() {
   // 增加一种访问路径 允许通过 [category]/[slug] 访问文章
   // 例如文章slug 是 test ，然后文章的分类category是 production
   // 则除了 [domain]/[slug] 以外，还支持分类名访问: [domain]/[category]/[slug]
-  console.log(
-    allPages
-      ?.filter(row => checkSlugHasNoSlash(row) && row.category)
-      .map(row => ({
-        params: { prefix: row.category, slug: row.slug }
-      }))
-  )
 
   return {
     paths: paths,
@@ -92,7 +81,7 @@ export async function getStaticProps({ params: { prefix, slug }, locale }) {
   }
 
   // 文章内容加载
-  if (!props?.posts?.blockMap) {
+  if (!props?.post?.blockMap) {
     props.post.blockMap = await getPostBlocks(props.post.id, from)
   }
   // 生成全文索引 && JSON.parse(BLOG.ALGOLIA_RECREATE_DATA)
