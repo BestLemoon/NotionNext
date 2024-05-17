@@ -22,15 +22,16 @@
     "build-all-in-dev": "cross-env VERCEL_ENV=production next build"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^1.0.10",
+    "@vercel/analytics": "^1.2.2",
     "@headlessui/react": "^1.7.15",
     "@next/bundle-analyzer": "^12.1.1",
-    "@vercel/analytics": "^1.0.0",
     "algoliasearch": "^4.18.0",
     "feed": "^4.2.2",
     "js-md5": "^0.7.3",
     "lodash.throttle": "^4.1.1",
     "memory-cache": "^0.2.0",
-    "next": "13.3.1",
+    "next": "13.5.1",
     "notion-client": "6.15.6",
     "notion-utils": "6.15.6",
     "react": "^18.2.0",
