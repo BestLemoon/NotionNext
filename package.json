@@ -25,9 +25,10 @@
   "dependencies": {
     "@clerk/localizations": "^3.0.4",
     "@clerk/nextjs": "^5.1.5",
+    "@vercel/speed-insights": "^1.0.10",
+    "@vercel/analytics": "^1.2.2",
     "@headlessui/react": "^1.7.15",
     "@next/bundle-analyzer": "^12.1.1",
-    "@vercel/analytics": "^1.0.0",
     "algoliasearch": "^4.18.0",
     "axios": "^1.7.2",
     "feed": "^4.2.2",
