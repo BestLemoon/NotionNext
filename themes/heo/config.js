@@ -1,4 +1,7 @@
 const CONFIG = {
+  HEO_HOME_POST_TWO_COLS: true, // 首页博客两列显示，若为false则只显示一列
+  HEO_LOADING_COVER: true, // 页面加载的遮罩动画
+
   HEO_HOME_BANNER_ENABLE: true,
 
   HEO_SITE_CREATE_TIME: '2023-12-19', // 建站日期，用于计算网站运行的第几天
@@ -21,7 +24,8 @@ const CONFIG = {
   HEO_HERO_TITLE_4: '新版上线',
   HEO_HERO_TITLE_5: '新博客上线，聊聊新感受～',
   HEO_HERO_TITLE_LINK: 'https://blog.chillway.me/article/91fbaa98-4200-4bf4-8e80-f3d1d8754324',
-
+  // 英雄区遮罩文字
+  HEO_HERO_COVER_TITLE: '随便逛逛',
   // 英雄区显示三个置顶分类
   HEO_HERO_CATEGORY_1: { title: '技术分享', url: '/tag/技术分享' },
   HEO_HERO_CATEGORY_2: { title: '生活杂谈', url: '/tag/生活杂谈' },
@@ -42,8 +46,14 @@ const CONFIG = {
     '🤖️ 数码科技爱好者',
     '🧱 团队小组发动机'
   ],
-  HEO_INFO_CARD_URL: 'https://github.com/BestLemoon', // 个人资料底部按钮链接
 
+  // 个人资料底部按钮
+  HEO_INFO_CARD_URL1: '/about',
+  HEO_INFO_CARD_ICON1: 'fas fa-user',
+  HEO_INFO_CARD_URL2: 'https://github.com/BestLemoon',
+  HEO_INFO_CARD_ICON2: 'fab fa-github',
+  HEO_INFO_CARD_URL3: 'https://blog.chillwaytech.com',
+  HEO_INFO_CARD_TEXT3: '了解更多',
   // 用户技能图标
   HEO_GROUP_ICONS: [
     {
@@ -110,6 +120,12 @@ const CONFIG = {
   HEO_SOCIAL_CARD_TITLE_3: '点击加入社群',
   HEO_SOCIAL_CARD_URL: 'https://docs.tangly1024.com/article/how-to-question',
 
+  // 底部统计面板文案
+  HEO_POST_COUNT_TITLE: '文章数:',
+  HEO_SITE_TIME_TITLE: '建站天数:',
+  HEO_SITE_VISIT_TITLE: '访问量:',
+  HEO_SITE_VISITOR_TITLE: '访客数:',
+
   // *****  以下配置无效，只是预留开发 ****
   // 菜单配置
   HEO_MENU_INDEX: true, // 显示首页
@@ -128,6 +144,7 @@ const CONFIG = {
 
   HEO_ARTICLE_ADJACENT: true, // 显示上一篇下一篇文章推荐
   HEO_ARTICLE_COPYRIGHT: true, // 显示文章版权声明
+  HEO_ARTICLE_NOT_BY_AI: false, // 显示非AI写作
   HEO_ARTICLE_RECOMMEND: true, // 文章关联推荐
 
   HEO_WIDGET_LATEST_POSTS: true, // 显示最新文章卡
