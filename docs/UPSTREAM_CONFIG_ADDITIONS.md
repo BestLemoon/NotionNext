@@ -56,7 +56,7 @@
 ## 本地配置保留情况
 
 - `blog.config.js`
-  - 保留本地 `LINK: https://blog.chillway.me`。
+  - 保留本地 `LINK: https://blog.chillwaytech.com`。
   - 保留已有图片、字体、分享、动画、挂件和路由映射等个性配置。
 - `themes/heo/config.js`
   - 保留建站日期、通知链接、首页 Hero 文案、分类标签、右侧推荐图、个人资料链接和社交卡片开关。
